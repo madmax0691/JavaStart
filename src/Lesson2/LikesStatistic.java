@@ -1,3 +1,5 @@
+package Lesson2;
+
 public class LikesStatistic {
     public static void main(String[] args) {
         long likesCount = 102; // Input: any valid number of likes

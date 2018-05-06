@@ -1,4 +1,4 @@
-/*4. Вычислить 45 * 10^30 + 32 * 10^27 (^ - возведение в степень).*/
+package Lesson3;/*4. Вычислить 45 * 10^30 + 32 * 10^27 (^ - возведение в степень).*/
 
 public class PowMath {
     public static void main(String[] args) {

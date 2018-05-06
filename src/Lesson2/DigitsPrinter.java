@@ -1,3 +1,5 @@
+package Lesson2;
+
 public class DigitsPrinter {
     public static void main(String[] args) {
         int n = 123687;  // Input: any positive n

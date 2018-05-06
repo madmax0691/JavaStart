@@ -1,3 +1,5 @@
+package Lesson1;
+
 public class CoffeeCup {
     public static void main(String[] args) {
         System.out.println("_________________¶¶¶1___¶¶¶____¶¶¶1_______________\n" +

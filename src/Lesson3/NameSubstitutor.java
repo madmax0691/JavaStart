@@ -1,6 +1,8 @@
+package Lesson3;
+
 import java.util.Scanner;
 
-/*Task 3 (NameSubstitutor)
+/*      Task 3
         С клавиатуры вводится строка name.
         Написать программу подстановки в сообщение Hi, my name is ${name} имени name, вместо шаблона ${name}. Использовать метод из класса String.
 

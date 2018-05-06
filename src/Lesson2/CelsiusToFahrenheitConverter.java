@@ -1,3 +1,5 @@
+package Lesson2;
+
 public class CelsiusToFahrenheitConverter {
     public static void main(String[] args) {
         double celsius = 20.0; // Input: any valid Celsius temperature

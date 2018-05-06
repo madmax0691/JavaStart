@@ -1,7 +1,9 @@
+package Lesson3;
+
 import java.util.Scanner;
 
 /*
-Task 1 (SimpleAboutMeApp)
+        Task 1
         С клавиатуры вводятся данные:
         Имя.
         Фамилия.

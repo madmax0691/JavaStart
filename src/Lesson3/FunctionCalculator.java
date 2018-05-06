@@ -1,6 +1,8 @@
+package Lesson3;
+
 import java.util.Scanner;
 
-/*Task 4 (FunctionCalculator)
+/*      Task 4
         С клавиатуры вводится число типа double: x.
         Найти результат функции:
 
