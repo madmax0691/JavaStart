@@ -5,7 +5,7 @@ package HomeWorkLoopsConditions.Level2;
 public class RhombusPrinter {
     public static void main(String[] args) {
 
-        printRhombus(9);
+        printRhombus(21);
     }
 
     public static void printRhombus(int size) {

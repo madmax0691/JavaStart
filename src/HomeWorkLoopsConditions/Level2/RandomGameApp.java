@@ -13,31 +13,37 @@ import java.util.Scanner;
 */
 public class RandomGameApp {
     public static void main(String[] args) {
+
         System.out.println("Let`s play!");
         Random random = new Random();
         int min = 1;
         int max = 100;
         int number = random.nextInt(max - min) + min;
         int counter = 0;
-        int comparemin = 0;
-        int comparemax = 100;
+        int compareMin = 0;
+        int compareMax = 100;
         Scanner scanner = new Scanner(System.in);
+
         do {
-            System.out.print("Input number (" + comparemin + ".." + comparemax + "): ");
+            System.out.print("Input number (" + compareMin + ".." + compareMax + "): ");
+
             int scan = scanner.nextInt();
+
             if (scan == number) {
                 System.out.println("YOU WIN!!! Random number was " + number);
                 break;
             } else {
                 if (scan < number) {
-                    comparemin = scan + 1;
+                    compareMin = scan + 1;
                 } else {
-                    comparemax = scan - 1;
+                    compareMax = scan - 1;
                 }
                 counter++;
             }
         } while (counter < 5);
-        System.out.println("Sorry, you lose. Random number was " + number);
+        if (counter >= 5) {
+            System.out.println("Sorry, you lose. Random number was " + number);
+        }
     }
 }
 //Tests
