@@ -34,8 +34,8 @@ public class RandomsPrinter {
         17
         16
         Exception in thread "main" java.lang.IllegalArgumentException: count > 0, min <= max
-        at HomeWorkLoopsConditions.Level1.Loops.RandomsPrinter.printRandoms(RandomsPrinter.java:17)
-        at HomeWorkLoopsConditions.Level1.Loops.RandomsPrinter.main(RandomsPrinter.java:10)
+        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Loops.RandomsPrinter.printRandoms(RandomsPrinter.java:17)
+        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Loops.RandomsPrinter.main(RandomsPrinter.java:10)
 
         Process finished with exit code 1*/
 /*
@@ -43,7 +43,7 @@ public class RandomsPrinter {
         16
         16
         Exception in thread "main" java.lang.IllegalArgumentException: count > 0, min <= max
-        at HomeWorkLoopsConditions.Level1.Loops.RandomsPrinter.printRandoms(RandomsPrinter.java:17)
-        at HomeWorkLoopsConditions.Level1.Loops.RandomsPrinter.main(RandomsPrinter.java:10)
+        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Loops.RandomsPrinter.printRandoms(RandomsPrinter.java:17)
+        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Loops.RandomsPrinter.main(RandomsPrinter.java:10)
 
         Process finished with exit code 1*/

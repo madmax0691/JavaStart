@@ -46,5 +46,5 @@ public class BlackJack {
 //        Card A = 22 Card B = 19 Score: 19
 //        Card A = 22 Card B = 23 Score: 0
 //        Exception in thread "main" java.lang.IllegalArgumentException: cardA and cardB must be more than zero -19 20
-//        at HomeWorkLoopsConditions.Level1.Conditions.BlackJack.blackjackScore(BlackJack.java:19)
-//        at HomeWorkLoopsConditions.Level1.Conditions.BlackJack.main(BlackJack.java:13)
+//        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Conditions.BlackJack.blackjackScore(BlackJack.java:19)
+//        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Conditions.BlackJack.main(BlackJack.java:13)

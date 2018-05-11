@@ -30,5 +30,5 @@ public class BiggerRectangle {
 //        Test:
 //        2
 //        Exception in thread "main" java.lang.IllegalArgumentException: widht1, height1, width2, height2 > 0 10 -20 40 30
-//        at HomeWorkLoopsConditions.Level1.Conditions.BiggerRectangle.biggerRectange(BiggerRectangle.java:12)
-//        at HomeWorkLoopsConditions.Level1.Conditions.BiggerRectangle.main(BiggerRectangle.java:7)
+//        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Conditions.BiggerRectangle.biggerRectange(BiggerRectangle.java:12)
+//        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Conditions.BiggerRectangle.main(BiggerRectangle.java:7)

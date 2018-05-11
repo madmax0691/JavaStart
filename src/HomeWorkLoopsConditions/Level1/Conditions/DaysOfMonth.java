@@ -33,5 +33,5 @@ public class DaysOfMonth {
 //        Month: 4 30
 //        Month: 2 24
 //        Exception in thread "main" java.lang.IllegalArgumentException: month = 1 … 12 20
-//        at HomeWorkLoopsConditions.Level1.Conditions.DaysOfMonth.daysOfMonth(DaysOfMonth.java:13)
-//        at HomeWorkLoopsConditions.Level1.Conditions.DaysOfMonth.main(DaysOfMonth.java:9)
+//        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Conditions.DaysOfMonth.daysOfMonth(DaysOfMonth.java:13)
+//        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Conditions.DaysOfMonth.main(DaysOfMonth.java:9)

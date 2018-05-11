@@ -33,5 +33,5 @@ public class LuckyTicket {
 //        Ticket: 273534 true
 //        Ticket: 111112 false
 //        Exception in thread "main" java.lang.IllegalArgumentException: ticket = 0 … 999999 22222222
-//        at HomeWorkLoopsConditions.Level1.Conditions.LuckyTicket.isLuckyTicket(LuckyTicket.java:14)
-//        at HomeWorkLoopsConditions.Level1.Conditions.LuckyTicket.main(LuckyTicket.java:9)
+//        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Conditions.LuckyTicket.isLuckyTicket(LuckyTicket.java:14)
+//        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Conditions.LuckyTicket.main(LuckyTicket.java:9)

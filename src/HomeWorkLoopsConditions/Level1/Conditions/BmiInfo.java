@@ -35,5 +35,5 @@ public class BmiInfo {
 //Test
 //        70.0, 1.75 "Normal"
 //        Exception in thread "main" java.lang.IllegalArgumentException: weight > 0, height > 0
-//        at HomeWorkLoopsConditions.Level1.Conditions.BmiInfo.bmiInfo(BmiInfo.java:18)
-//        at HomeWorkLoopsConditions.Level1.Conditions.BmiInfo.main(BmiInfo.java:13)
+//        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Conditions.BmiInfo.bmiInfo(BmiInfo.java:18)
+//        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Conditions.BmiInfo.main(BmiInfo.java:13)

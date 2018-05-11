@@ -26,8 +26,8 @@ public class MultiplicationTablePrinter {
 //        Test
 /*
 Exception in thread "main" java.lang.IllegalArgumentException: size > 0
-        at HomeWorkLoopsConditions.Level1.Loops.MultiplicationTablePrinter.printMultiplicationTable(MultiplicationTablePrinter.java:11)
-        at HomeWorkLoopsConditions.Level1.Loops.MultiplicationTablePrinter.main(MultiplicationTablePrinter.java:7)
+        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Loops.MultiplicationTablePrinter.printMultiplicationTable(MultiplicationTablePrinter.java:11)
+        at HomeWorkLoopsConditions.HomeWorkArraysMethods.Level1.Loops.MultiplicationTablePrinter.main(MultiplicationTablePrinter.java:7)
         1 2 3
         2 4 6
         3 6 9
