@@ -1,5 +1,9 @@
 package Lesson8;
 
+//Реализовать консольную программу "Крестики-нолики 3x3".
+//Играют 2 игрока, поочередно вводят свои хода в виде координат.
+//Программа предоставляет отображение доски в консоли, возможность ввода и проверку победителя.
+
 import java.util.Scanner;
 
 public class TickTackToe {
@@ -19,11 +23,11 @@ public class TickTackToe {
     }
 
     void showTable(String arrayDemo[][]) {
-        System.out.print("Y: ");
+        System.out.print("X: ");
         for (int i = 0; i < arrayDemo.length; i++) {
             System.out.print(i + "  ");
         }
-        System.out.println("X:");
+        System.out.println("Y:");
         for (int i = 0; i < arrayDemo.length; i++) {
             System.out.print("   ");
             for (int j = 0; j < arrayDemo.length; j++) {
@@ -45,9 +49,9 @@ public class TickTackToe {
         int counter = 0;
         do {
             System.out.println("Player" + playerInfo + ", enter X: ");
-            int x = sc.nextInt();
-            System.out.println("Player" + playerInfo + ", enter Y: ");
             int y = sc.nextInt();
+            System.out.println("Player" + playerInfo + ", enter Y: ");
+            int x = sc.nextInt();
             if ((((x < arrayDemo.length && x >= 0)) && (y < arrayDemo.length && y >= 0))) {
                 if (((arrayDemo[x][y].equals(playerOne)) || (arrayDemo[x][y].equals(playerTwo))) != true) {
                     arrayDemo[x][y] = playerIndex;
@@ -79,11 +83,31 @@ public class TickTackToe {
                 if ((j == arrayDemo.length - 1) && counterHorizontal == arrayDemo.length) {
                     return true;
                 }
-                if (i == arrayDemo.length - 1 && counterVertical == arrayDemo.length) {
+                if ((j == arrayDemo.length - 1) && counterVertical == arrayDemo.length) {
                     return true;
                 }
             }
         }
+        //проверка по диагонали
+        int counterDiagonal = 0;
+        int counterMirroredDiagonal = 0;
+        for (int i = 0, j = arrayDemo.length - 1; i < arrayDemo.length; i++, j--) {
+            if (arrayDemo[i][j].equals(playerIndex)) {
+                counterMirroredDiagonal++;
+            }
+            if ((i == arrayDemo.length - 1) && counterMirroredDiagonal == arrayDemo.length) {
+                return true;
+            }
+        }
+        for (int i = 0; i < arrayDemo.length; i++) {
+            if (arrayDemo[i][i].equals(playerIndex)) {
+                counterDiagonal++;
+            }
+            if ((i == arrayDemo.length - 1) && counterDiagonal == arrayDemo.length) {
+                return true;
+            }
+        }
+        //возврат по умолчанию
         return false;
     }
 
@@ -112,6 +136,123 @@ class TickTackToeDemo {
             }
         } while (tk.isWinner(tk.playerOne, tk.argument) == false && tk.isWinner(tk.playerTwo, tk.argument) == false);
         System.out.println("Thank you for playing!");
+        scanner.close();
 
     }
 }
+/*
+
+Let's play:
+PlayerOne: '*'
+PlayerTwo: '~'
+X: 0  1  2  3  4  Y:
+   -  -  -  -  -  0
+   -  -  -  -  -  1
+   -  -  -  -  -  2
+   -  -  -  -  -  3
+   -  -  -  -  -  4
+PlayerOne, enter X:
+4
+PlayerOne, enter Y:
+0
+X: 0  1  2  3  4  Y:
+   -  -  -  -  *  0
+   -  -  -  -  -  1
+   -  -  -  -  -  2
+   -  -  -  -  -  3
+   -  -  -  -  -  4
+PlayerTwo, enter X:
+4
+PlayerTwo, enter Y:
+1
+X: 0  1  2  3  4  Y:
+   -  -  -  -  *  0
+   -  -  -  -  ~  1
+   -  -  -  -  -  2
+   -  -  -  -  -  3
+   -  -  -  -  -  4
+PlayerOne, enter X:
+3
+PlayerOne, enter Y:
+1
+X: 0  1  2  3  4  Y:
+   -  -  -  -  *  0
+   -  -  -  *  ~  1
+   -  -  -  -  -  2
+   -  -  -  -  -  3
+   -  -  -  -  -  4
+PlayerTwo, enter X:
+4
+PlayerTwo, enter Y:
+1
+Oops, cell is already taken, please use valid coordinates!
+PlayerTwo, enter X:
+5
+PlayerTwo, enter Y:
+1
+Incorrect input value, please use valid coordinates!
+PlayerTwo, enter X:
+4
+PlayerTwo, enter Y:
+2
+X: 0  1  2  3  4  Y:
+   -  -  -  -  *  0
+   -  -  -  *  ~  1
+   -  -  -  -  ~  2
+   -  -  -  -  -  3
+   -  -  -  -  -  4
+PlayerOne, enter X:
+2
+PlayerOne, enter Y:
+2
+X: 0  1  2  3  4  Y:
+   -  -  -  -  *  0
+   -  -  -  *  ~  1
+   -  -  *  -  ~  2
+   -  -  -  -  -  3
+   -  -  -  -  -  4
+PlayerTwo, enter X:
+4
+PlayerTwo, enter Y:
+3
+X: 0  1  2  3  4  Y:
+   -  -  -  -  *  0
+   -  -  -  *  ~  1
+   -  -  *  -  ~  2
+   -  -  -  -  ~  3
+   -  -  -  -  -  4
+PlayerOne, enter X:
+1
+PlayerOne, enter Y:
+3
+X: 0  1  2  3  4  Y:
+   -  -  -  -  *  0
+   -  -  -  *  ~  1
+   -  -  *  -  ~  2
+   -  *  -  -  ~  3
+   -  -  -  -  -  4
+PlayerTwo, enter X:
+3
+PlayerTwo, enter Y:
+3
+X: 0  1  2  3  4  Y:
+   -  -  -  -  *  0
+   -  -  -  *  ~  1
+   -  -  *  -  ~  2
+   -  *  -  ~  ~  3
+   -  -  -  -  -  4
+PlayerOne, enter X:
+0
+PlayerOne, enter Y:
+4
+X: 0  1  2  3  4  Y:
+   -  -  -  -  *  0
+   -  -  -  *  ~  1
+   -  -  *  -  ~  2
+   -  *  -  ~  ~  3
+   *  -  -  -  -  4
+Winner is playerOne!!!
+Thank you for playing!
+
+Process finished with exit code 0
+*/
